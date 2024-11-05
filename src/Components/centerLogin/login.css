@@ -1,0 +1,59 @@
+.loginForm {
+  width: 40%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.form-forgot {
+  display: flex;
+  justify-content: space-around;
+  max-width: 70%;
+  margin: 1rem auto;
+}
+.form-forgot a {
+  color: black;
+}
+
+.form-logo img {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+.form-logo {
+  text-align: center;
+}
+.form_main {
+  background-color: var(--color-began);
+  padding: 2rem;
+  border-radius: 30px;
+}
+.form_main form {
+  color: white;
+  font-size: 18px;
+}
+.form_main form input {
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+
+.loginBtn {
+  border: none;
+  border-radius: 20px;
+  background-color: #ea5a21;
+  padding: 10px 50px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .loginForm {
+    width: 90%;
+  }
+  .form_main {
+    padding: 1rem;
+  }
+}

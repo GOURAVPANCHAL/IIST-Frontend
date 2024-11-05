@@ -1,0 +1,31 @@
+.ourAssociatesslider{
+  position: relative;
+  display: flex;
+}
+
+.our-associate-prev-btn,
+.our-associate-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-began);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.our-associate-prev-btn {
+  left: 10px;
+}
+
+.our-associate-next-btn {
+  right: 10px;
+}
+
+.our-associate-prev-btn:hover,
+.our-associate-next-btn:hover {
+  background-color: #555;
+}

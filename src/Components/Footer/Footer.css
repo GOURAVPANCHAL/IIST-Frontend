@@ -1,0 +1,56 @@
+.footer-section {
+  background-color: var(
+    --color-began
+  ); /* Same background color as in the image */
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-logo {
+  width: 80px; /* Adjust logo size if needed */
+  margin-bottom: 20px;
+}
+
+.footer-icons {
+  background-color: #00aced;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: darkgoldenrod; /* You can choose any hover color */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+
+.footer-section h5 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}

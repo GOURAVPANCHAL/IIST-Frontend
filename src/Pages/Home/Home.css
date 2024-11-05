@@ -1,0 +1,189 @@
+:root {
+  --color-began: #003873;
+  --color-light-blue: #00aaa9;
+  --color-green-blue: #2dbcb6;
+  --color-light-grey: #eef3f7;
+  --bg-white: #f7f9fe;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 2rem;
+  color: var(--color-began);
+  margin-bottom: 20px;
+  /* position: relative; */
+  padding-left: 1rem;
+}
+
+/* .section-title::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: var(--color-began);
+    left: 0;
+    top: 0;
+} */
+
+/* Styling for programs and placement cell sections */
+.programs,
+.placement-cell {
+  padding: 20px 0px;
+}
+
+/* Flexbox layout for program items */
+.program-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Styling for individual program items */
+.program-item {
+  background-color: var(--color-light-grey);
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px;
+  flex-basis: calc(25% - 20px);
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  object-fit: cover;
+  aspect-ratio: 1.5;
+}
+.program-item h3 {
+  font-size: 1.2rem;
+  color: var(--color-began);
+  margin-top: 0.5rem;
+}
+.program-img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Styling for placement actions */
+.placement-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  background-color: var(--color-light-blue);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--color-green-blue);
+}
+
+.exploreBtn {
+  background-color: #003873;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+}
+
+.inspiration {
+  display: flex;
+}
+
+.homeallbutton {
+  margin-top: 5rem;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 65%; /* Center vertically */
+  transform: translateY(-50%); /* Ensure centering */
+  background-color: var(--color-began);
+  color: white;
+  padding: 10px 15px; /* Larger padding for better visibility */
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-prev {
+  left: 0px; /* Position the prev button on the left side */
+}
+
+.custom-next {
+  right: 0px; /* Position the next button on the right side */
+}
+
+/* Responsive styles for buttons */
+@media (max-width: 768px) {
+  .custom-prev,
+  .custom-next {
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+  }
+
+  .custom-prev {
+    left: 10px; /* Reduce margin on smaller screens */
+  }
+
+  .custom-next {
+    right: 10px; /* Reduce margin on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-prev,
+  .custom-next {
+    padding: 6px 10px; /* Further adjust padding for very small screens */
+  }
+
+  .custom-prev {
+    left: 5px; /* Further reduce margin on mobile */
+  }
+
+  .custom-next {
+    right: 5px; /* Further reduce margin on mobile */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .programs,
+  .placement-cell {
+    padding: 20px 0px;
+  }
+
+  .homeallbutton {
+    background-color: #2b00aa23;
+    padding: 1rem 0rem;
+    margin-top: 1rem;
+  }
+  .exploreBtn {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+
+  .program-item {
+    flex-basis: calc(50% - 20px);
+    /* 2 items per row on tablets and smaller screens */
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .program-item {
+    flex-basis: calc(100% - 20px);
+    /* Full width on very small screens */
+  }
+}
