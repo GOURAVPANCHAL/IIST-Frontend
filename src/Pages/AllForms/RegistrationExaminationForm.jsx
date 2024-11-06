@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "./allform.css";
 import logo from "../../Assets/gallery/IISD.png";
+import { useNavigate } from "react-router-dom";
 
 const RegistrationExaminationForm = () => {
-  // State to store form field values
+  const navigate = useNavigate();
+
+  const selectdateofexam = () => {
+    navigate("/student-zone/select-exam-date");
+  };
   const [formData, setFormData] = useState({
     authCode: "",
     name: "",
@@ -17,13 +22,13 @@ const RegistrationExaminationForm = () => {
     address: "",
     city: "",
     phone: "",
-    email: "", // Changed mobile to email for better clarity
+    email: "",
     institutionName: "",
     placeDate: "",
     signature: "",
-    skillName: "", // New field for skill name
-    experience: "", // New field for experience
-    lastJob: "", // New field for last job details
+    skillName: "",
+    experience: "",
+    lastJob: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -53,7 +58,6 @@ const RegistrationExaminationForm = () => {
     if (validate()) {
       console.log("Form Submitted", formData);
 
-      // Reset form fields
       setFormData({
         authCode: "",
         name: "",
@@ -67,7 +71,7 @@ const RegistrationExaminationForm = () => {
         address: "",
         city: "",
         phone: "",
-        email: "", // Reset email field
+        email: "",
         institutionName: "",
         placeDate: "",
         signature: "",
@@ -416,6 +420,9 @@ const RegistrationExaminationForm = () => {
             </div>
           </div>
         </form>
+        <button onClick={selectdateofexam} className="btn btn-success">
+          navigate
+        </button>
       </div>
     </div>
   );

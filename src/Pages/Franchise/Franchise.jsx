@@ -82,7 +82,7 @@ const Franchise = () => {
               <b>Complete the Application Form</b>
             </li>
             <p>
-              Fill out the <a href=""> application form</a> with accurate
+              Fill out the <Link to="/application-form"> application form</Link> with accurate
               details of your institution or proposed institution, attaching all
               relevant documents.
             </p>

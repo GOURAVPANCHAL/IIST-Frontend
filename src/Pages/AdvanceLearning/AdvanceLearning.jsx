@@ -3,10 +3,8 @@ import React from "react";
 const AdvanceLearning = () => {
   return (
     <div>
-      <div className="container py-5">
-        <div className="documentShadow">
-          <h2>Advanced Learning Management Systems</h2>
-        </div>
+      <div className="container">
+        <h2 className="documentShadow">Advanced Learning Management Systems</h2>
         <p>
           Our Advanced Learning Management System (LMS) is designed to
           revolutionize how vocational and skill-based education is delivered.
@@ -19,51 +17,65 @@ const AdvanceLearning = () => {
 
         <hr />
         <div>
-          <div className="documentShadow mt-5">
-            <h2>Benefits for Centers</h2>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              Attract More Students: Offering accredited and well-organized
-              online courses through the LMS makes centers more appealing to
-              prospective students, thereby increasing student enrollment.
-            </p>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              Boosted Reputation: Centers affiliated with IIST and using the LMS
-              gain credibility, as they are recognized for providing certified,
-              quality education that meets industry demands.
-            </p>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              Embedded Video Support: Centers can upload and embed instructional
-              videos directly into the course content, creating a more engaging
-              and comprehensive learning experience for students.
-            </p>
+          <h2 className="documentShadow mt-5">Benefits for Centers</h2>
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <div className="rulesAndRegulations">
+                <p>
+                  <b> Attract More Students:</b> Offering accredited and
+                  well-organized online courses through the LMS makes centers
+                  more appealing to prospective students, thereby increasing
+                  student enrollment.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="rulesAndRegulations">
+                <p>
+                  <b> Boosted Reputation:</b> Centers affiliated with IIST and
+                  using the LMS gain credibility, as they are recognized for
+                  providing certified, quality education that meets industry
+                  demands.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="rulesAndRegulations">
+                <p>
+                  <b> Embedded Video Support:</b> Centers can upload and embed
+                  instructional videos directly into the course content,
+                  creating a more engaging and comprehensive learning experience
+                  for students.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div>
-          <div className="documentShadow mt-5">
-            <h2>Benefits for Students</h2>
+          <h2 className="documentShadow mt-5">Benefits for Students</h2>
+          <div className="rulesAndRegulations">
+            <p>
+              <b> Access to High-Quality Education:</b> Students gain access to
+              expertly curated courses designed to equip them with practical
+              skills and knowledge that align with industry standards.
+            </p>
           </div>
-          <p>
-            Access to High-Quality Education: Students gain access to expertly
-            curated courses designed to equip them with practical skills and
-            knowledge that align with industry standards.
-          </p>
-          <p>
-            Self-Paced Learning: The flexibility of the LMS allows students to
-            learn at their own pace, review course materials at their
-            convenience, and manage their learning schedules without time
-            constraints.
-          </p>
-          <p>
-            Instant Certification: Upon completion of a course, students receive
-            certification that enhances their employability, making them more
-            attractive to potential employers in various sectors.
-          </p>
+          <div className="rulesAndRegulations">
+            <p>
+              <b>Self-Paced Learning: </b>The flexibility of the LMS allows
+              students to learn at their own pace, review course materials at
+              their convenience, and manage their learning schedules without
+              time constraints.
+            </p>
+          </div>
+          <div className="rulesAndRegulations">
+            <p>
+              <b> Instant Certification:</b> Upon completion of a course,
+              students receive certification that enhances their employability,
+              making them more attractive to potential employers in various
+              sectors.
+            </p>
+          </div>
           <p>
             By using the IIST LMS, both students and centers reap significant
             benefits. Students can access structured, skill-enhancing education

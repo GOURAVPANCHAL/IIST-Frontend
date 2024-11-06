@@ -9,21 +9,17 @@ const DocumentVerification = () => {
   });
   return (
     <>
-      <div className="container py-5">
-        <div className="documentShadow">
-          <h2>Document Verification</h2>
-        </div>
+      <div className="container">
+          <h2 className="documentShadow">Document Verification</h2>
         <p>
           The document verification process ensures that all candidates'
           credentials and experience meet the required standards for
           participation in the programs offered by the Indian Institute of Skill
           Training (IIST). This process is crucial for maintaining the integrity
           and credibility of certifications awarded by the institution.
+          Verification Procedure
         </p>
 
-        <div className="documentShadow mb-5">
-          <h2>Verification Procedure</h2>
-        </div>
         <div>
           <p>
             <b>Upload Documents:</b> Candidates are required to upload all

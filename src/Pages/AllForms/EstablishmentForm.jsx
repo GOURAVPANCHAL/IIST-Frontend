@@ -93,7 +93,7 @@ const EstablishmentForm = () => {
                 (FOR SKILLED & EXPERIENCED CANDIDATES)
               </h5>
               <h5 className="text-center text-muted">
-                APPLICATION FORM FOR ESTABLISHMENT OR APPLICATION OF
+                APPLICATION FORM FOR ESTABLISHMENT OR AFFILATION OF
               </h5>
               <h6 className="text-center text-muted">
                 VOCATIONAL, SKILL TRAINING & EDUCATION CENTRE

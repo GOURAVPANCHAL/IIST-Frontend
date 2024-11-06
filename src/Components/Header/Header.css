@@ -277,7 +277,7 @@ header .nav-links ul li .dropdown-menu li a {
 
 header .nav-links ul li .dropdown-menu li a:hover {
   color: white;
-  background: var(--color-began);
+  background: var(--color-orange);
   padding-left: 1rem;
 }
 

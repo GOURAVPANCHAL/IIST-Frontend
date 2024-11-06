@@ -1,5 +1,11 @@
 import React, { useEffect } from "react";
 import "./examination.css";
+import image1 from "../../Assets/ExaminationIcons/examProcedure1.png";
+import image2 from "../../Assets/ExaminationIcons/examProcedure2.png";
+import image3 from "../../Assets/ExaminationIcons/examProcedure3.png";
+import image4 from "../../Assets/ExaminationIcons/examProcedure4.png";
+import image5 from "../../Assets/ExaminationIcons/examProcedure5.png";
+import image6 from "../../Assets/ExaminationIcons/examProcedure6.png";
 const Examination = () => {
   useEffect(() => {
     window.scrollTo({
@@ -9,10 +15,11 @@ const Examination = () => {
   });
   return (
     <div>
-      <div className="container py-5">
-        <div className="documentShadow">
-          <h2>Examination</h2>
-        </div>
+      <div className="container">
+        <h2 className="documentShadow" id="examination">
+          Examination
+        </h2>
+
         <div className="row">
           <div className="col-md-8">
             <p>
@@ -34,53 +41,115 @@ const Examination = () => {
             <div className="about-content text-white">
               <h2>Examination</h2>
               <p>
-                <a className="text-white fs-5" href="">Exam Procedure</a>
+                <a className="text-white fs-5" href="#examination">
+                  Examination
+                </a>
               </p>
               <p>
-                <a className="text-white fs-5" href="">Exam Schedule</a>
+                <a className="text-white fs-5" href="#examProcedure">
+                  Exam Procedure
+                </a>
               </p>
               <p>
-                <a className="text-white fs-5" href="">Rules and Regulations</a>
+                <a className="text-white fs-5" href="#examSchedule">
+                  Exam Schedule
+                </a>
+              </p>
+              <p>
+                <a className="text-white fs-5" href="#ruleandRegulation">
+                  Rules and Regulations
+                </a>
               </p>
             </div>
           </div>
         </div>
         <hr />
         <div>
-          <div className="documentShadow">
-            <h2>Exam Procedure</h2>
+          <h2 className="documentShadow" id="examProcedure">
+            Exam Procedure
+          </h2>
+
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <div className="examination_procedure">
+                <div className="text-center">
+                  <img src={image1} alt="examinationIcons" />
+                  <h4>Choose Exam Type</h4>
+                </div>
+                <p>
+                  Candidates can opt for either an on-demand exam or a scheduled
+                  (calendar-based) exam.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="examination_procedure">
+                <div className="text-center">
+                  <img src={image2} alt="examinationIcons" />
+                  <h4>Application Submission</h4>
+                </div>
+                <p>
+                  Download and fill out the "On-Demand Application & Examination
+                  Form." Submit the form along with relevant documents like a
+                  self-declaration of experience, experience letters, and
+                  educational certificates (if applicable).
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="examination_procedure">
+                <div className="text-center">
+                  <img src={image3} alt="examinationIcons" />
+                  <h4>Document Upload</h4>
+                </div>
+                <p>
+                  Upload the filled application form and supporting documents to
+                  the system for verification.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="examination_procedure">
+                <div className="text-center">
+                  <img src={image4} alt="examinationIcons" />
+                  <h4>Fee Payment</h4>
+                </div>
+                <p>
+                  Make the required payment to confirm your exam registration.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="examination_procedure">
+                <div className="text-center">
+                  <img src={image5} alt="examinationIcons" />
+                  <h4>On-Demand Exam</h4>
+                </div>
+                <p>
+                  After successful registration, choose an available exam date
+                  that suits your schedule.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="examination_procedure">
+                <div className="text-center">
+                  <img src={image6} alt="examinationIcons" />
+                  <h4>Scheduled Exam</h4>
+                </div>
+                <p>
+                  Follow the published exam calendar for fixed exam dates and
+                  prepare accordingly.
+                </p>
+              </div>
+            </div>
           </div>
-          <p>
-            <b>Choose Exam Type:</b>Candidates can opt for either an on-demand
-            exam or a scheduled (calendar-based) exam.
-          </p>
-          <p>
-            <b>Application Submission:</b>Download and fill out the "On-Demand
-            Application & Examination Form." Submit the form along with relevant
-            documents like a self-declaration of experience, experience letters,
-            and educational certificates (if applicable).
-          </p>
-          <p>
-            <b>Document Upload:</b>Upload the filled application form and
-            supporting documents to the system for verification.
-          </p>
-          <p>
-            <b>Fee Payment:</b>Make the required payment to confirm your exam
-            registration.
-          </p>
-          <p>
-            <b>On-Demand Exam:</b>After successful registration, choose an
-            available exam date that suits your schedule.
-          </p>
-          <p>
-            <b>Scheduled Exam:</b>Follow the published exam calendar for fixed
-            exam dates and prepare accordingly.
-          </p>
         </div>
         <div className="mb-5 mt-5">
-          <div className="documentShadow">
-            <h2>Exam Schedule</h2>
-          </div>
+          <h2 id="examSchedule" className="documentShadow">
+            Exam Schedule
+          </h2>
+
           <p>
             Exams can either be scheduled in advance or taken on-demand. In the
             scheduled format, exams are conducted as per the annual exam
@@ -98,43 +167,50 @@ const Examination = () => {
           </p>
         </div>
         <div>
-          <div className="documentShadow">
-            <h2>Rules and Regulations</h2>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              <b>Eligibility:</b>Candidates must have relevant skills or
-              experience in their industry to apply. They should provide
-              accurate information and supporting documents.
-            </p>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              <b>Adherence to Guidelines:</b> All candidates are expected to
-              follow the examination guidelines and rules provided by the Indian
-              Institute of Skill Training (IIST).
-            </p>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              <b>Conduct During Exams:</b> Misconduct or dishonest practices
-              during the exam may result in disqualification and forfeiture of
-              fees. Candidates are advised to adhere strictly to the exam rules.
-            </p>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              <b>Rescheduling:</b> If a candidate is unable to attend the
-              scheduled exam, they must inform the institution in advance to
-              reschedule the exam.
-            </p>
-          </div>
-          <div className="rulesAndRegulations">
-            <p>
-              <b>Cancellation Policy:</b> No refunds will be provided for
-              canceled exams unless exceptional circumstances apply. However,
-              candidates may be allowed to reschedule under certain conditions.
-            </p>
+          <h2 className="documentShadow" id="ruleandRegulation">
+            Rules and Regulations
+          </h2>
+
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <div className="rulesAndRegulations">
+                <p>
+                  <b>Eligibility:</b>Candidates must have relevant skills or
+                  experience in their industry to apply. They should provide
+                  accurate information and supporting documents.
+                </p>
+                <p>
+                  <b>Adherence to Guidelines:</b> All candidates are expected to
+                  follow the examination guidelines and rules provided by the
+                  Indian Institute of Skill Training (IIST).
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="rulesAndRegulations">
+                <p>
+                  <b>Conduct During Exams:</b> Misconduct or dishonest practices
+                  during the exam may result in disqualification and forfeiture
+                  of fees. Candidates are advised to adhere strictly to the exam
+                  rules.
+                </p>
+                <p>
+                  <b>Rescheduling:</b> If a candidate is unable to attend the
+                  scheduled exam, they must inform the institution in advance to
+                  reschedule the exam.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="rulesAndRegulations">
+                <p>
+                  <b>Cancellation Policy:</b> No refunds will be provided for
+                  canceled exams unless exceptional circumstances apply.
+                  However, candidates may be allowed to reschedule under certain
+                  conditions.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -4,6 +4,8 @@
   --color-green-blue: #2dbcb6;
   --color-light-grey: #eef3f7;
   --bg-white: #f7f9fe;
+  --color-orange: #F38120;
+
 }
 
 /* Section title styling */
@@ -93,6 +95,13 @@
   border-radius: 10px;
   border: none;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+
+.exploreBtn:hover{
+  background-color:  #f38120;
+  transition: 0.5s;
 }
 
 .inspiration {

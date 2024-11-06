@@ -12,6 +12,17 @@ const Header = () => {
     {
       name: "About Us",
       link: "/about",
+      subMenu: [
+        { name: "Our Inspirations", link: "/about/our-inspiration" },
+        {
+          name: "Skill Development in India",
+          link: "/about/skils-development-in-india",
+        },
+        {
+          name: "Affiliations",
+          link: "/student-services/verify-center-code",
+        },
+      ],
     },
     {
       name: "Programs",
@@ -33,36 +44,54 @@ const Header = () => {
       link: "#",
       subMenu: [
         { name: "Student Login", link: "/student-login" },
-        { name: "Admission (Online admission form)" },
         {
-          name: "Advanced Learning Management Systems",
-          link: "/student-services/advance-learning",
+          name: "Admissions  +",
+          nestedMenu: [
+            {
+              name: "On-demand Admission Form",
+              link: "/student-zone/registration-form",
+            },
+            {
+              name: "General Admission Form",
+              link: "/student-zone/candidate-training-form",
+            },
+          ],
+        },
+        {
+          name: "Academic Calendar",
+          link: "#",
         },
         {
           name: "Examination +",
           link: "#",
           nestedMenu: [
             {
-              name: "Examination Information",
-              link: "/student-zone/Examination",
-            },
-            {
-              name: "Exam Form",
-              link: "/student-zone/candidate-training-form",
-            },
-            {
               name: "On-Demand Exam Form",
               link: "/student-zone/registration-form",
+            },
+            {
+              name: "Calendar Exam Form",
+              link: "#",
             },
           ],
         },
         {
-          name: "Document Verification",
-          link: "/student-zone/document-verifications",
+          name: "Advance Learning Management System",
+          link: "/student-services/advance-learning",
         },
       ],
     },
-    { name: "Franchise", link: "/student-services/IISD-franchise" },
+    {
+      name: "Franchise",
+      link: "/student-services/IISD-franchise",
+      subMenu: [
+        { name: "Apply for New Franchisee", link: "/application-form-for-establishmen" },
+        {
+          name: "Center Renewal",
+          link: "#",
+        },
+      ],
+    },
     { name: "Internship", link: "/internship" },
     { name: "Training", link: "/training" },
     { name: "Placement", link: "/placement" },

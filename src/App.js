@@ -20,6 +20,9 @@ import EstablishmentForm from "./Pages/AllForms/EstablishmentForm";
 import CandidateTraningForm from "./Pages/AllForms/CandidateTraningForm";
 import ComputerScience from "./Pages/ProgramCourseList/ComputerScience";
 import TeacherTraining from "./Pages/ProgramCourseList/TeacherTraining";
+import SelectDateExam from './Pages/AllForms/SelectDateExam'
+import OurInspiration from "./Pages/About/OurInspiration";
+import SkilsDevelopmentIndia from "./Pages/About/SkilsDevelopmentIndia";
 function App() {
   return (
     <>
@@ -27,6 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about/our-inspiration" element={<OurInspiration />} />
+        <Route path="/about/skils-development-in-india" element={<SkilsDevelopmentIndia />} />
         <Route path="centre-login" element={<CenterLogin />} />
         <Route
           path="/student-services/verify-center-code"
@@ -47,12 +52,18 @@ function App() {
           element={<AdvanceLearning />}
         />
         <Route path="/student-login" element={<Studentlogin />} />
+
+        {/* ************************************************************** */}
+        {/* ************************************************************** */}
         {/* all form */}
         <Route
           path="/application-form"
           element={<ApplicationFormInformation />}
         />
-        <Route path="/student-zone/registration-form" element={<RegistrationForm />} />
+        <Route
+          path="/student-zone/registration-form"
+          element={<RegistrationForm />}
+        />
         <Route
           path="/application-form-for-establishmen"
           element={<EstablishmentForm />}
@@ -61,7 +72,14 @@ function App() {
           path="/student-zone/candidate-training-form"
           element={<CandidateTraningForm />}
         />
+        <Route
+          path="/student-zone/select-exam-date"
+          element={<SelectDateExam />}
+        />
         {/* all form end */}
+        {/* ************************************************************** */}
+        {/* ************************************************************** */}
+
         <Route path="/contact" element={<Contact />} />
 
         {/* all program list  */}

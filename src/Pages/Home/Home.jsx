@@ -24,47 +24,31 @@ import OurAssociate from "../../Components/OurAssociate/OurAssociate";
 import modi from "../../Assets/gallery/modi.png";
 import abdul from "../../Assets/gallery/abdul.png";
 import iisd from "../../Assets/gallery/IISD.png";
-const skillTrainingPrograms = [
+import image1 from "../../Assets/programs/ComputerScienceand IT-min.jpg";
+import image2 from "../../Assets/programs/teachertrainingicon-min.jpg";
+import image3 from "../../Assets/programs/HospitalandHealhManagementicon-min.jpg";
+import image4 from "../../Assets/programs/BeautyWellnessandCosmetics-min.jpg";
+import image5 from "../../Assets/programs/ArtsandPaintings-min.jpg";
+import image6 from "../../Assets/programs/Tailoring-min.jpg";
+import image7 from "../../Assets/programs/BusinessManagement-min.jpg";
+import image8 from "../../Assets/programs/Industrial Trade Skills -min.jpg";
+import image9 from "../../Assets/programs/TechnicalTradeSkills-min.jpg";
+import image10 from "../../Assets/programs/safety-management-leadership-min.jpg";
+import image11 from "../../Assets/programs/HospitalandHealhManagementicon-min.jpg";
+import image12 from "../../Assets/programs/Designing-for-the-Future-Technology-min.png";
+const Programs = [
   {
-    title: "Hospital & Paramedical",
-    imgSrc: hospitalParamedical,
-    link: "/hospital-paramedical",
+    name: "Computer Science and IT",
+    url: "/programs/computer-science-&-IT",
+    img: image1,
   },
-  {
-    title: "Teacher Training",
-    imgSrc: teacherTraining,
-    link: "/teacher-training",
-  },
-  {
-    title: "Technical Skill",
-    imgSrc: technicalSkill,
-    link: "/technical-skill",
-  },
-  {
-    title: "Cutting & Tailoring",
-    imgSrc: cuttingTailoring,
-    link: "/cutting-tailoring",
-  },
-  {
-    title: "Safety Management",
-    imgSrc: safetyManagement,
-    link: "/safety-management",
-  },
-  {
-    title: "Industrial Skill Training",
-    imgSrc: industrialSkillTraining,
-    link: "/industrial-skill-training",
-  },
-  {
-    title: "Engineering Training Programs",
-    imgSrc: engineeringTraining,
-    link: "/engineering-training",
-  },
-  {
-    title: "Spoken English & Personality Development",
-    imgSrc: spokenEnglishPersonalityDevelopment,
-    link: "/spoken-english-personality-development",
-  },
+  { name: "Teacher Training", url: "/programs/teacher-training", img: image2 },
+  { name: "Hospital and Health Management", url: "#", img: image3 },
+  { name: "Beauty, Wellness and Cosmetics", url: "#", img: image4 },
+  { name: "Arts and Paintings", url: "#", img: image5 },
+  { name: "Tailoring", url: "#", img: image6 },
+  { name: "Business Management", url: "#", img: image7 },
+  { name: "Safety Management", url: "#", img: image10 },
 ];
 
 const vocationalPrograms = [
@@ -117,17 +101,21 @@ const Home = () => {
       <section className="container">
         <div className="programs">
           <h2 className="section-title">SKILL DEVELOPMENT PROGRAMS</h2>
-          <div className="program-list">
-            {skillTrainingPrograms.map((program, index) => (
-              <Link to={program.link} className="program-item" key={index}>
-                <img
-                  src={program.imgSrc}
-                  alt={program.title}
-                  className="program-img"
-                />
-                <h3>{program.title}</h3>
-              </Link>
-            ))}
+          <div className="container my-3">
+            <div className="row">
+              {Programs.map((item, index) => (
+                <div key={index} className="col-md-3 mb-4">
+                  <Link to={item.url}>
+                    <div className="programsImage">
+                      <img src={item.img} className="w-100" alt="program" />
+                      <div className="program_content">
+                        <h6 className="mb-0">{item.name}</h6>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="text-center">
             <Link to={"/programs"} className="exploreBtn">
@@ -254,64 +242,63 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="container mt-5" style={{position:'relative'}}>
-  <h2 className="text-center">Gallery</h2>
-  <section className="hero-cara">
-    {/* Previous button */}
-    <div className="swiper-button-prev custom-prev">
-      <i className="bi bi-arrow-left"></i>
-    </div>
+      <section className="container mt-5" style={{ position: "relative" }}>
+        <h2 className="text-center">Gallery</h2>
+        <section className="hero-cara">
+          {/* Previous button */}
+          <div className="swiper-button-prev custom-prev">
+            <i className="bi bi-arrow-left"></i>
+          </div>
 
-    <Swiper
-      slidesPerView={5}
-      spaceBetween={10}
-      loop={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={{
-        prevEl: ".custom-prev",
-        nextEl: ".custom-next",
-      }}
-      modules={[Pagination, Navigation]}
-      className="mySwiper"
-      breakpoints={{
-        0: {
-          slidesPerView: 2, // Show 1 image on very small screens
-          spaceBetween: 10,
-        },
-        480: {
-          slidesPerView: 2, // Show 2 images on screens >= 480px
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 3, // Show 3 images on screens >= 768px
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 5, // Show 4 images on screens >= 1024px
-          spaceBetween: 20,
-        },
-      }}
-    >
-      {caraImg.map((item, index) => (
-        <SwiperSlide key={index}>
-          <img
-            src={item}
-            className="program-item"
-            alt={`carousel-image-${index}`}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={10}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={{
+              prevEl: ".custom-prev",
+              nextEl: ".custom-next",
+            }}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+            breakpoints={{
+              0: {
+                slidesPerView: 2, // Show 1 image on very small screens
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2, // Show 2 images on screens >= 480px
+                spaceBetween: 15,
+              },
+              768: {
+                slidesPerView: 3, // Show 3 images on screens >= 768px
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 5, // Show 4 images on screens >= 1024px
+                spaceBetween: 20,
+              },
+            }}
+          >
+            {caraImg.map((item, index) => (
+              <SwiperSlide key={index}>
+                <img
+                  src={item}
+                  className="program-item"
+                  alt={`carousel-image-${index}`}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-    {/* Next button */}
-    <div className="swiper-button-next custom-next">
-      <i className="bi bi-arrow-right"></i>
-    </div>
-  </section>
-</section>
-
+          {/* Next button */}
+          <div className="swiper-button-next custom-next">
+            <i className="bi bi-arrow-right"></i>
+          </div>
+        </section>
+      </section>
 
       <OurAssociate />
     </>
